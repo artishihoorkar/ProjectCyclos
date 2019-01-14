@@ -26,7 +26,7 @@ public class ChangeMemberPasswordCheckPOM {
 
 	private WebElement personal;
 	
-	@FindBy(xpath = ".//*[@id='submenu1.1']/span[2]") //capture change password link under personal link
+	@FindBy(xpath = "//*[contains(text(),'Change password')]") //capture change password link under personal link
 			
 	private WebElement chgpwd;	
 	
