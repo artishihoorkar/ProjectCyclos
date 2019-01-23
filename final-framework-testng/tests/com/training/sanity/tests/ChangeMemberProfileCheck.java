@@ -3,7 +3,6 @@ package com.training.sanity.tests;
 import org.testng.annotations.Test;
 
 import com.training.generics.ScreenShot;
-import com.training.pom.MemberConfirmPasswordCheckPOM;
 import com.training.pom.ChangeMemberProfileCheckPOM;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;

@@ -1,75 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="44881" started-at="2019-01-14T10:25:55Z" finished-at="2019-01-14T10:26:40Z">
+  <suite name="Default suite" duration-ms="85251" started-at="2019-01-23T06:44:37Z" finished-at="2019-01-23T06:46:02Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="44881" started-at="2019-01-14T10:25:55Z" finished-at="2019-01-14T10:26:40Z">
-      <class name="com.training.sanity.tests.MemberConfirmPasswordCheck">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.MemberConfirmPasswordCheck@51565ec2]" name="setUpBeforeClass" is-config="true" duration-ms="21193" started-at="2019-01-14T15:55:55Z" finished-at="2019-01-14T15:56:17Z">
+    <test name="Default test" duration-ms="85251" started-at="2019-01-23T06:44:37Z" finished-at="2019-01-23T06:46:02Z">
+      <class name="com.training.sanity.tests.RemoveAdvert">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.RemoveAdvert@51565ec2]" name="setUpBeforeClass" is-config="true" duration-ms="10792" started-at="2019-01-23T12:14:37Z" finished-at="2019-01-23T12:14:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="checkLogin()[pri:1, instance:com.training.sanity.tests.MemberConfirmPasswordCheck@51565ec2]" name="checkLogin" duration-ms="16182" started-at="2019-01-14T15:56:17Z" finished-at="2019-01-14T15:56:33Z">
+        <test-method status="PASS" signature="checkAdminLogin()[pri:1, instance:com.training.sanity.tests.RemoveAdvert@51565ec2]" name="checkAdminLogin" duration-ms="2604" started-at="2019-01-23T12:14:48Z" finished-at="2019-01-23T12:14:51Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkLogin -->
-        <test-method status="PASS" signature="checkpassword()[pri:2, instance:com.training.sanity.tests.MemberConfirmPasswordCheck@51565ec2]" name="checkpassword" duration-ms="3937" started-at="2019-01-14T15:56:33Z" finished-at="2019-01-14T15:56:37Z">
+        </test-method> <!-- checkAdminLogin -->
+        <test-method status="PASS" signature="clickManageAdvertBtn()[pri:2, instance:com.training.sanity.tests.RemoveAdvert@51565ec2]" name="clickManageAdvertBtn" duration-ms="34582" started-at="2019-01-23T12:14:51Z" finished-at="2019-01-23T12:15:25Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkpassword -->
-        <test-method status="FAIL" signature="checkconfpassword()[pri:3, instance:com.training.sanity.tests.MemberConfirmPasswordCheck@51565ec2]" name="checkconfpassword" duration-ms="71" started-at="2019-01-14T15:56:37Z" finished-at="2019-01-14T15:56:37Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[notmodified expected [Passwords are not Equal] but found [Passwords are not Equal
-]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: notmodified expected [Passwords are not Equal] but found [Passwords are not Equal
-]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
-	at org.testng.Assert.assertEquals(Assert.java:115)
-	at org.testng.Assert.assertEquals(Assert.java:189)
-	at com.training.sanity.tests.MemberConfirmPasswordCheck.checkconfpassword(MemberConfirmPasswordCheck.java:73)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- clickManageAdvertBtn -->
+        <test-method status="PASS" signature="checkAdminLogout()[pri:3, instance:com.training.sanity.tests.RemoveAdvert@51565ec2]" name="checkAdminLogout" duration-ms="258" started-at="2019-01-23T12:15:25Z" finished-at="2019-01-23T12:15:25Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkconfpassword -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.MemberConfirmPasswordCheck@51565ec2]" name="tearDown" is-config="true" duration-ms="3338" started-at="2019-01-14T15:56:37Z" finished-at="2019-01-14T15:56:40Z">
+        </test-method> <!-- checkAdminLogout -->
+        <test-method status="PASS" signature="checkMemberLogin()[pri:4, instance:com.training.sanity.tests.RemoveAdvert@51565ec2]" name="checkMemberLogin" duration-ms="2874" started-at="2019-01-23T12:15:25Z" finished-at="2019-01-23T12:15:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkMemberLogin -->
+        <test-method status="PASS" signature="findadvert()[pri:6, instance:com.training.sanity.tests.RemoveAdvert@51565ec2]" name="findadvert" duration-ms="30726" started-at="2019-01-23T12:15:28Z" finished-at="2019-01-23T12:15:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findadvert -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.RemoveAdvert@51565ec2]" name="tearDown" is-config="true" duration-ms="3320" started-at="2019-01-23T12:15:59Z" finished-at="2019-01-23T12:16:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.training.sanity.tests.MemberConfirmPasswordCheck -->
+      </class> <!-- com.training.sanity.tests.RemoveAdvert -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
