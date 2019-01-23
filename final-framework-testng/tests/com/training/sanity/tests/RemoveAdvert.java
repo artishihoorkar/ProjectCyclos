@@ -43,7 +43,6 @@ public class RemoveAdvert {
 		removeadvertPOM = new RemoveAdvertPOM(driver);
 		baseUrl = properties.getProperty("baseURL");
 		screenShot = new ScreenShot(driver);
-		// open the browser
 		driver.get(baseUrl);
 	}
 
