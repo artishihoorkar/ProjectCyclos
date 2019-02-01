@@ -12,11 +12,10 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.training.bean.LoginBean;
-import com.training.dao.ELearningDAO;
+import com.training.dao.CyclosDAO;
 import com.training.dataproviders.LoginDataProviders;
 import com.training.generics.ScreenShot;
 import com.training.pom.LoginPOM;
-import com.training.readexcel.ReadExcel;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 

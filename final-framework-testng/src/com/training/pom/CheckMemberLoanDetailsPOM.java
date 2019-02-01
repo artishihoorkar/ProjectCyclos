@@ -21,7 +21,7 @@ private WebDriver driver;
 	@FindBy(id="cyclosPassword") //capture password on the login page
 	private WebElement password;
 	
-	@FindBy(xpath= "//*[@id='cyclosLogin']/table/tbody/tr[3]/td/input") //capture submit button on the login page
+	@FindBy(xpath= "//[@id='cyclosLogin']/table/tbody/tr[3]/td/input") //capture submit button on the login page
 	private WebElement loginBtn;
 	
 	@FindBy(id = "memberUsername")

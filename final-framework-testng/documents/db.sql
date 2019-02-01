@@ -1,7 +1,12 @@
-create table login(
-username varchar(50) not null,
-password varchar(50));
+create table changepermissiongroup(
+membername varchar(50) not null,
+newgroup varchar(50),
+comments varchar(500));
 
 
-insert into login values("admin", "admin@123"); 
-insert into login values("naveen", "testing@123"); 
+insert into changepermissiongroup(membername,newgroup,comments)values
+("manzoor1","Full brokers","full access to the member");
+insert into changepermissiongroup(membername,newgroup,comments)values("sunil","Full brokers","full access to the member");
+insert into changepermissiongroup(membername,newgroup,comments)values("mariya","Disabled brokers","broker is disabled");
+
+select * from changepermissiongroup;

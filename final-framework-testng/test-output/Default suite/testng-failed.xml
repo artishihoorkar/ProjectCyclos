@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.training.sanity.tests.RemoveAdvert">
+      <class name="com.training.sanity.tests.CheckAdvertInvalidValuesCYTC_070">
         <methods>
-          <include name="tearDown"/>
           <include name="setUpBeforeClass"/>
-          <include name="checkMemberLogin"/>
+          <include name="addMultipleAvertisment" invocation-numbers="1 2"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.training.sanity.tests.RemoveAdvert -->
+      </class> <!-- com.training.sanity.tests.CheckAdvertInvalidValuesCYTC_070 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

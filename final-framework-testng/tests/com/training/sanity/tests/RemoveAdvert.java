@@ -93,7 +93,7 @@ public class RemoveAdvert {
 		removeadvertPOM.clickAdvertisementLink();
 	}
 	
-	@Test(priority = 6) //checking if deleted advertisement is visible from member profile
+	@Test(priority = 5) //checking if deleted advertisement is visible from member profile
 	public void findadvert(){
 		membersearchresults = driver.findElements(By.xpath("//div[@id='tdContents']/table/tbody/tr[2]/td/table/tbody/tr/td[2]/div[1]")); //capturing the list of advertisements on member profile
 		ArrayList <String>searchAdvertTitle = new ArrayList<String>(); //initializing array for entering all the advertisement titles on the page
